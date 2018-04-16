@@ -1,6 +1,7 @@
 # Simple Flask skeleton app
 
-## Includes with Vue/Laravel-Mix frontend pipeline and Bulma bootstrap
+Flask + SQLAlchemy skeleton app to be used with Pipenv.
+Includes Vue/Laravel-Mix frontend pipeline and Bulma bootstrap.
 
 ### What is this
 
@@ -40,6 +41,9 @@ Launch REPL for tinkering
 Also could be done via flask cli
 > flask shell
 
+Initialize repo
+> make prepare
+
 ### Project structure
 
 ```
@@ -59,3 +63,14 @@ Also could be done via flask cli
         ├── models.py
         └── user
 ```
+
+### What else to do
+
+- try Orator instead of SQLAlchemy
+- add some shortcuts for migrations
+- add some basic tests
+- automatically append static manifest from `npm run production`
+- possibly cleanup project structure
+- include simple docker/vagrant image for quick prototyping
+- convert to cookiecutter template
+- check configuration switching
