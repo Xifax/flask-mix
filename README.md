@@ -12,10 +12,21 @@
 
 ### Commands to use
 
-Initialize virtual environment and install required modules
+Specify environment variables
+> cp example.env .env
+
+Initialize virtual environment (it shall also read .env)
 > pipenv shell
-then
+
+Install required python modules
 > pipenv install
+
+Run both mix watch script and python dev sever, in parallel
+> ./run dev
+
+Well, that's all that needed, mostly.
+
+### Other useful commands
 
 Run dev server
 > flask run
@@ -25,7 +36,8 @@ Build and monitor static files
 
 Launch REPL for tinkering
 > ptpython
-or
+
+Also could be done via flask cli
 > flask shell
 
 ### Project structure
@@ -42,7 +54,7 @@ or
     │   ├── static
     │   └── templates
     └── server
-        ├── config.py       << configuration for dev, production and so on
+        ├── config.py       << configuration for different environments
         ├── main            << main blueprint
         ├── models.py
         └── user
