@@ -1,4 +1,6 @@
-# Simple Flask configuration with Vue/Laravel-Mix frontend pipeline
+# Simple Flask skeleton app
+
+## Includes with Vue/Laravel-Mix frontend pipeline and Bulma bootstrap
 
 ### What is this
 
@@ -12,6 +14,7 @@
 
 Initialize virtual environment and install required modules
 > pipenv shell
+then
 > pipenv install
 
 Run dev server
@@ -22,4 +25,25 @@ Build and monitor static files
 
 Launch REPL for tinkering
 > ptpython
+or
 > flask shell
+
+### Project structure
+
+```
+.
+├── example.env             << environment variables
+├── run.py                  << flask entry point
+├── webpack.mix.js          << frontend pipeline entry point
+└── mix
+    ├── __init__.py         << flask configuration
+    ├── client
+    │   ├── build           << frontend build artifacts
+    │   ├── static
+    │   └── templates
+    └── server
+        ├── config.py       << configuration for dev, production and so on
+        ├── main            << main blueprint
+        ├── models.py
+        └── user
+```
