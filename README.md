@@ -1,6 +1,6 @@
 # Simple Flask configuration with Vue/Laravel-Mix frontend pipeline
 
-What is this:
+### What is this
 
 - largely based on some skeletons found on github
 - uses Pipenv for virtual environment and local variables (.env file)
@@ -8,9 +8,18 @@ What is this:
 - intended for simple prototyping using separate client/server domains
 - includes vue, lodash, axios, moment and bulma as already installed modules
 
-Commands to use:
+### Commands to use
 
+Initialize virtual environment and install required modules
 > pipenv shell
+> pipenv install
+
+Run dev server
 > flask run
+
+Build and monitor static files
 > npm run watch
+
+Launch REPL for tinkering
 > ptpython
+> flask shell
