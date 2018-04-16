@@ -177,3 +177,4 @@ typings/
 .DS_Store
 .idea
 build/*
+.vagrant

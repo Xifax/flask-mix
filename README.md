@@ -22,6 +22,9 @@ Initialize virtual environment (it shall also read .env)
 Install required python modules
 > pipenv install
 
+Install node modules
+> npm install
+
 Run both mix watch script and python dev sever, in parallel
 > ./run dev
 

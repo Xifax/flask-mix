@@ -10,10 +10,12 @@ flask-migrate = "*"
 flask-login = "*"
 flask-sqlalchemy = "*"
 flask-wtf = "*"
+funcy = "*"
 
 [dev-packages]
 ptpython = "*"
 flask-debugtoolbar = "*"
+"flake8" = "*"
 
 [requires]
 python_version = "3.6"
