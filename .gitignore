@@ -172,4 +172,8 @@ typings/
 
 # End of https://www.gitignore.io/api/node
 
+# Additional things to ignore
+
 .DS_Store
+.idea
+build/*

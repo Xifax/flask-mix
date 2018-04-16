@@ -5,9 +5,15 @@ name = "pypi"
 
 [packages]
 Flask = "*"
+flask-bcrypt = "*"
+flask-migrate = "*"
+flask-login = "*"
+flask-sqlalchemy = "*"
+flask-wtf = "*"
 
 [dev-packages]
 ptpython = "*"
+flask-debugtoolbar = "*"
 
 [requires]
 python_version = "3.6"
